@@ -10,17 +10,22 @@ namespace task_3
     {
         static void Main(string[] args)
         {
-            Console.Write("N= ");
+           Console.Write("Enter N= ");
             string str = Console.ReadLine();
-            int N = int.Parse(str);
-            for (int i = 0; i < N; i++)
+            int N;
+            bool res = int.TryParse(str, out N);
+            if (res)
             {
-                for (int j = N; j >= N-(2*i); j-- )
-                    Console.Write("*");
-                   Console.WriteLine();
-               
-            }
-            
+                string s = "";
+                for (int j = 0; j < N; j++)
+                {
+                    s += "*";
+                    s.Insert(1, s);
+                    Console.Write(s);
+                    Console.WriteLine();
+                }
+                   
+          
             Console.ReadLine();
         }
     }
