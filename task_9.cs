@@ -26,7 +26,7 @@ namespace task_9
                     s += arr[i];
             }
             Console.Write("Сумма равна:" + s);
-            Console.ReadLine();
+            
         }
     }
 }
