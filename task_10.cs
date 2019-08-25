@@ -35,7 +35,7 @@ namespace task_10
 
             }
             Console.WriteLine("Сумма равна:"+s);
-            Console.ReadLine();
+            
         }
     }
 }
