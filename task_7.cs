@@ -28,7 +28,7 @@ namespace task_7
             }
             Console.WriteLine("max=" + max);
             Console.WriteLine("min=" + min);
-            Console.ReadLine();
+            
         }
     }
 }
