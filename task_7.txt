@@ -1,3 +1,0 @@
-﻿"task_4.exe" (CLR v4.0.30319: DefaultDomain). Загружено "C:\Windows\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll". Загрузка символов пропущена. Модуль оптимизирован, включен параметр отладчика "Только мой код".
-"task_4.exe" (CLR v4.0.30319: DefaultDomain). Загружено "C:\Users\kr150\source\repos\task_4\task_4\bin\Debug\task_4.exe". Символы загружены.
-Программа "[1376] task_4.exe" завершилась с кодом -1073741510 (0xc000013a).
