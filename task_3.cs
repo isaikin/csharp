@@ -1,27 +1,33 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace task_1
+namespace task_3
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.Write("N= ");
+            Console.WriteLine("Введите n");
             string str = Console.ReadLine();
-            int N = int.Parse(str);
-            for (int i=0; i<N; i++)
+            int n;
+            bool res = int.TryParse(str, out n);
+            if (res)
             {
-                for (int j = i; j < N; j++)
-                    Console.Write(" ");
-                for (int k = N; k >= N - (2 * i); k--)
-                    Console.Write("*");
-                Console.WriteLine("");
+                string s = "";
+                for (int i=0; i<n; i++)
+                {
+                    for (int j = i; j < n; j++)
+                        Console.Write(" ");
+                    Console.Write(s);
+                    s += "*";
+                    s.Insert(1, s);
+                    Console.Write(s);
+                    Console.WriteLine();
+                }
             }
-            Console.ReadLine();
         }
     }
 }
